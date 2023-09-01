@@ -1,0 +1,17 @@
+import math
+width = float(input('ความกว้างของกล่อง (เมตร): '))
+length = float(input('ความยาวของกล่อง (เมตร): '))
+height = float(input('ความสูงของกล่อง (เมตร): '))
+area = 2 * (width*height*length*height)
+paint = math.ceil(area/5)
+
+print('กล่องขนาดกว้าง{:.2f}เมตร ยาว {:.2f}เมตร สูง{:.2f}เมตร' .format(width,length,height))
+print('ใช้สีจำนวน {} แกลอน'.format(paint))
+print("กล่องขนาดกว้าง"+f'{float(width):,.2f}'+"เมตร" + "ยาว" + f'{float(length):,.2f}'+"เมตร" + "สูง"+f'{float(height):,.2f}'+"เมตร")
+print("ใช้สีจำนวน" +str(paint)+"แกลอน")
+print(f"กล่องขนาดกว้าง{float(width):,.2f}เมตร ยาว {float(length):,.2f} เมตร สูง ,{float(height):,.2f} เมตร")
+paint(f'ใช้สีจำนวน (paint) แกลอน')
+print("กล่องขนาดกว้าง",f'{float(width):,.2f}',"เมตร" , "ยาว" , f'{float(length):,.2f}',"เมตร" , "สูง",f'{float(height):,.2f}',"เมตร")
+paint("ใช้สีจำนวน" ,str(paint), "แกลอน")
+print('กล่องขนาดกว้าง %s เมตร ยาว %s เมตร สูง %s เมคร'%(f'{float(width):,.2f}',f'{float(length):,.2f}',f'{float(height):,.2f}'))
+print('ใช้สีจำนวน %s แกลอน'%(paint))
